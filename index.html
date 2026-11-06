@@ -101,7 +101,7 @@
     <h2>Exam Image Resizer</h2>
     
     <div class="form-group">
-      <label for="imageInput">Upload Image (JPG/PNG):</label>
+      <label for="imageInput">Upload Image (JPG/PNG)(Max 4 MB):</label>
       <input type="file" id="imageInput" accept="image/*" />
     </div>
 
@@ -129,11 +129,17 @@
       <p id="previewLabel" style="font-size: 12px; color: #666; margin-bottom: 6px;"></p>
       <img id="previewImg" alt="Output Preview" />
     </div>
+    <div>
+        <center>
+    <pre>developed by janrdhana Rajesh /4</pre>
+        </center>
+</div>
   </div>
+  <br/>
 
   <script>
     // Replace with your Vercel URL or http://127.0.0.1:5000 for local development
-    const API_URL = "http://127.0.0.1:5000/api/resize-signature";
+    const API_URL = "https://imageresize-uiws.vercel.app/api/resize-signature";
 
     async function processImage() {
       const fileInput = document.getElementById("imageInput");
